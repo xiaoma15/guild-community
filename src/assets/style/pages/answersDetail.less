@@ -1,0 +1,97 @@
+@import '../variable';
+
+.answersDetail_page{
+    background-color: @col-f5;
+    .answersDetailContent{
+        margin-top: 45px;
+        font-family: PingFangSC-Regular, SourceHanSansCN-Regular;
+        font-size: 14px;
+        color: #333333;
+        .answer-box{
+            margin-top: 10px;
+            .block{
+                position: absolute;
+                bottom: 0;
+                top: 105px;
+                margin-bottom: 0;
+                padding-bottom: 0;
+                .block_img {
+                    position: relative;
+                    left: 0;
+                    top: -0.15rem;
+                    right: 0;
+                    bottom: 0;
+                    img{
+                        position: absolute;
+                        right: 0.90rem;
+                        width: 0.64rem;
+                        height: 0.49rem;
+                    }
+                }
+            }
+            .block-header{
+                align-items: center;
+                .photo{
+                    width: 0.32rem;
+                    height: 0.32rem;
+                }
+            }
+            .answer-img{
+                width: 100%;
+                height: 2rem;
+                background: #333333;
+                border-radius: 5px;
+                margin-top: 0.20rem;
+                margin-bottom: 0.20rem;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .time{
+                margin-left: 0;
+            }
+            .work-box{
+                position: fixed;
+                bottom: 8px;
+                left: 0;
+                right: 15px;
+                text-align: right;
+                font-size: 12px;
+                color: #999999;
+                letter-spacing: 0;
+                span{
+                    display: inline-block;
+                    text-align: center;
+                    &:nth-of-type(2){
+                        margin-left: 0.30rem;
+                        margin-right: 0.30rem;
+                    }
+                }
+            }
+
+        }
+
+        .next-button{
+            text-align: right;
+            position: fixed;
+            bottom: 8px;
+            left: 0;
+            right: 15px;
+            .nextAnswer {
+                .transformIcon:before {
+                    display: inline-block;
+                    transform: rotate(-90deg);
+                    border: 0px solid #333333;
+                }
+            }
+
+        }
+
+    }
+}
+
+div.payAttentionButton{
+    background: rgba(17,191,244,0.08);
+    color: #11BFF4;
+}

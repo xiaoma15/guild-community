@@ -1,0 +1,223 @@
+@import '../variable';
+
+.problemDetails_page{
+    background: @col-f5;
+    .problemDetailsContent{
+        margin-top: 0.45rem;
+        font-family: PingFangSC-Regular, SourceHanSansCN-Regular;
+        font-size: 0.14rem;
+        color: #333333;
+        padding-bottom: 0.56rem;
+        .detail-box{
+            margin-top: 10px;
+            .communicationBox{
+                width: 100%;
+                margin-top: 0.1rem;
+                .my-scroller {
+                    overflow: hidden;
+                    position:absolute;
+                    top: 3.33rem;
+                    bottom:0;
+                    left:0;
+                    right:0;
+                }
+                .pos-bottom{
+                    bottom: 0.56rem;
+                }
+                .pos-top{
+                    top: 2.17rem;
+                }
+                .block{
+                    padding: 0.15rem 0.15rem 0.10rem;
+                    background: @white;
+                    margin-bottom: 0;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    .block-left{
+                        flex: 1;
+                        .block-content{
+                            flex-basis: 2.71rem;
+                            width: 2.71rem;
+                            .title{
+                                font-family: PingFangSC-Medium, SourceHanSansCN-Medium;
+                                font-size: 0.16rem;
+                                overflow: hidden;
+                                // line-height: 25px;
+                                // width: 100%;
+                                // text-overflow: ellipsis;
+                                // -webkit-line-clamp: 1;
+                                // -webkit-box-orient: vertical;
+                                // word-break: break-all;
+                                // display: -webkit-box;
+                            }
+                            .info{
+                                margin-top: 0.06rem;
+                                font-size: 0.12rem;
+                                color: #999999;
+                                span{
+                                    &:nth-of-type(2){
+                                        margin-left: 0.10rem;
+                                        margin-right: 0.10rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .block-right{
+                        flex-basis: 0.74rem;
+                    }
+                }
+                .balock-img-box{
+                    padding: 0.10rem 4%;
+                    background: @white;
+                    .item-title{
+                        overflow: hidden;
+                        display: -webkit-box;
+                        width: 100%;
+                        // text-overflow: ellipsis;
+                        // -webkit-line-clamp: 2;
+                        // -webkit-box-orient: vertical;
+                        // font-size: 0.14rem;
+                        // color: #333333;
+                        // line-height: 0.20rem;
+                        // word-break: break-all;
+                    }
+                    .img-box{
+                        padding-top: 0.10rem;
+                        .item-img{
+                            display: inline-block;
+                            // width: 105px;
+                            // flex-basis: 105px;
+                            width: 1.05rem;
+                            flex-basis: 1.05rem;
+                            img{
+                                width: 100%;
+                                height: 1.05rem;
+                                vertical-align: middle;
+                            }
+                            &:nth-of-type(2){
+                                margin: 0 4%;
+                            }
+                        }
+                    }
+                }
+                .answer{
+                    padding: 0.16rem 0.15rem 0.06rem;
+                    font-size: 0.13rem;
+                    color: #999999;
+                    background: @col-f5;
+                }
+                .item{
+                    padding: 0.15rem;
+                    background: @white;
+                    width: 100%;
+                    margin-bottom: 0.10rem;
+                    position: relative;
+                    .block-status{
+                        position: absolute;
+                        top: 0;
+                        right: 0.6rem;
+                        width: 0.64rem;
+                        height: 0.49rem;;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            display: inline-block;
+                        }
+                    }
+                     .block-header{
+                         display: flex;
+                         justify-content: space-between;
+                         margin-bottom: 0.1rem;
+                         font-family: PingFangSC-Regular, SourceHanSansCN-Regular;
+                         font-size: 0.14rem;
+                         color: #999999;
+                         .photo{
+                             display: inline-block;
+                             vertical-align: middle;
+                             width: 0.20rem;
+                             height: 0.20rem;
+                             border-radius: 50%;
+                             line-height: 0.20rem;
+                             margin-right: 0.06rem;
+                             img{
+                                 width: 100%;
+                                 height: 100%;
+                                 border-radius: 50%;
+                                 display: inline-block;
+                             }
+                         }
+                         .time{
+                            font-size: 0.12rem;
+                            color: #999999;
+                            margin-left: 0.15rem;
+                         }
+                         .iconBox{
+                            font-size: 0.14rem;
+                            color: #11BFF4;
+                            text-align: center;
+                            .icon-xingxing{
+                                font-size: 0.14rem;
+                                margin-right: 0.06rem;
+                            }
+                            .icon-caina{
+                                margin-right: 0.06rem;
+                            }
+                         }
+                     }
+                     .block-content{
+                        .time{
+                            font-family: PingFangSC-Regular, SourceHanSansCN-Regular;
+                            font-size: 0.12rem;
+                            color: #999999;
+                            margin-top: 0.06rem;
+                            margin-bottom: 0.10rem;
+                            span{
+                                &:nth-of-type(2){
+                                    margin-left: 0.10rem;
+                                }
+                            }
+                        }
+                        .discount{
+                            margin-top: 0.10rem;
+                            // overflow: hidden;
+                            // display: -webkit-box;
+                            // width: 100%;
+                            // text-overflow: ellipsis;
+                            // -webkit-line-clamp: 3;
+                            // -webkit-box-orient: vertical;
+                            // word-break: break-all;
+                        }
+
+                     }
+                     .block-footer{
+                         color: #666;
+                         span{
+                             &:nth-of-type(2){
+                                 margin-left: 0.30rem;
+                             }
+                             i{
+                                 margin-right: 0.06rem;
+                                 color: #d8d8d8;
+                             }
+                         }
+                     }
+                 }
+            }
+        }
+    }
+    .footer{
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        height: 0.56rem;
+        margin: 0 auto;
+        line-height: 0.56rem;
+        background: @white;
+        .submitButton{
+            margin-top: 0.08rem;
+        }
+    }
+}

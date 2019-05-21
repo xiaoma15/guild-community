@@ -1,0 +1,20 @@
+{
+    "name": "h5-dev-mobile-guide-community",
+    "dependencies": "A Vue.js project",
+    "identifier": "com.midea.msd.guideCommunity",
+    "releaseNote": "MSD",
+    "hidden": false,
+    "autoDownload": true,
+    "relatesTo": [],
+    "dependsOn": [],
+    "dependsTo": [],
+    "action": "",
+    "index": "index.html",
+    "isPcTest": 0,
+    "isDebug": 1,
+    "build": 1,
+    "version": "1.0.0",
+    "testBuild": 3,
+    "testVersion": "2.0.2"
+}
+

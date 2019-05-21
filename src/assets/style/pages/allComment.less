@@ -1,0 +1,152 @@
+@import '../variable';
+
+.moreAnswers_page{
+    .moreAnswersContent{
+        margin-top: 45px;
+        font-family: PingFangSC-Regular, SourceHanSansCN-Regular;
+        font-size: 14px;
+        color: #333333;
+        .my-scroller{
+            position: absolute;
+            bottom: 0.56rem;
+            top: 0.45rem;
+            left: 0;
+            right: 0;
+            overflow: hidden;
+        }
+        .moreAnswerBox{
+            padding: 0 0.15rem;
+        }
+        .moreAnswers{
+            padding: 0.15rem 0 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            .left{
+                flex-basis: 0.50rem;
+                margin-right: 0.10rem;
+                .person-img{
+                    width: 0.50rem;
+                    flex-basis: 0.50rem;
+                    height: 0.50rem;
+                    background: #ccc;
+                    border: 1px solid #fff;
+                    border-radius: 50%;
+                    display: inline-block;
+                }
+            }
+            .right{
+                flex: 1;
+                display: flex;
+                justify-content: space-between;
+                .person-info{
+                    position: relative;
+                    display: inline-block;
+                    vertical-align: top;
+                    flex: 1;
+                    .person-name{
+                        font-family: PingFangSC-Regular, SourceHanSansCN-Regular;
+                        font-size: 13px;
+                        color: #666666;
+                        margin-bottom: 0.06rem;
+                    }
+                    .person-content{
+                        padding-bottom: 0.145rem;
+                    }
+                }
+                .icBox{
+                    flex-basis: 0.45rem;
+                    height: 100%;
+                    text-align: right;
+                }
+            }right: 15px;
+            // }
+            .colorName{
+                color: #FF8924;
+            }
+            .special{
+                font-family: PingFangSC-Regular, SourceHanSansCN-Regular;
+                font-size: 13px;
+                color: #2A2A2A;
+                line-height: 18px;
+            }
+        }
+        .answers-box{
+            width: 100%;
+            .moreAnswers{
+                padding-left: 0.15rem;
+                padding-right: 0.15rem;
+                display: flex;
+                justify-content: space-between;
+                .answers-left{
+                    padding-left: 0.50rem;
+                    .small-img{
+                        width: 0.20rem;
+                        height: 0.20rem;
+                        background: pink;
+                        border-radius: 50%;
+                        display: inline-block;
+                        vertical-align: top;
+                        margin-right: 0.06rem;
+                    }
+                }
+                .answers-right{
+                    flex: 1;
+                    .person-answer{
+                        padding-bottom: 0.155rem;
+                    }
+                }
+            }
+        }
+        .allAnswer{
+            padding: 0.15rem 0.145rem;
+            text-align: center;
+            font-family: PingFangSC-Regular, SourceHanSansCN-Regular;
+            font-size: 14px;
+            color: #11BFF4;
+        }
+    }
+    .answer-footer{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 0.56rem;
+        z-index: 2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0.15rem;
+        input{
+            flex: 1;
+            height: 0.55rem;
+            border: none;
+            outline: none;
+            font-family: PingFangSC-Light;
+            font-size: 14px;
+            color: #999999;
+        }
+        .closeButton{
+            flex-basis: 0.74rem;
+        }
+    }
+
+    .comment{
+        width: 100%;
+        height: 100%;
+        outline:none;
+        resize:none;
+        border: none;
+        color: #999;
+        line-height: 20px;
+        font-family: PingFangSC-Light;
+        font-size: 14px;
+    }
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    display: inline-block
+}

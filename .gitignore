@@ -1,0 +1,11 @@
+.DS_Store
+node_modules/
+dist/
+local-data/
+npm-debug.log
+.idea/
+npm-debug.log.*
+h5-dev-mobile-guide-community-1.0.7-test-201905131723.zip
+h5-dev-mobile-guide-community-1.0.9-test-201905141430.zip
+h5-dev-mobile-guide-community-1.0.9-test-201905141638.zip
+*.zip

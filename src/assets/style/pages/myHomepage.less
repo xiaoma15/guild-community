@@ -1,0 +1,176 @@
+@import '../variable';
+
+.myHomepage_page{
+    background: @col-f5;
+    .myHomepageHeader{
+        background: url('../../img/background.png') repeat-y center;
+        .header-box{
+            display: flex;
+            font-family: PingFangSC-Regular, SourceHanSansCN-Regular;
+            font-size: 18px;
+            color: #FFFFFF;
+            text-align: center;
+            align-items: center;
+            .header-back{
+                width: 40px;
+                height: 40px;
+                padding: 10px;
+            }
+            .header-title{
+                flex: 1;
+                line-height: 40px;
+                text-indent: -50px;
+            }
+
+        }
+        .header-person{
+            padding: 15px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            .heder-left{
+                flex: 1;
+                .person-img{
+                    width: 50px;
+                    height: 50px;
+                    background: #ccc;
+                    border: 1px solid #fff;
+                    border-radius: 50%;
+                    display: inline-block;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                        display: inline-block;
+                    }
+                }
+                .person-info{
+                    display: inline-block;
+                    vertical-align: top;
+                    margin-left: 17px;
+                    font-family: PingFangSC-Regular, SourceHanSansCN-Regular;
+                    font-size: 12px;
+                    color: #FFFFFF;
+                    letter-spacing: 0;
+                    text-align: justify;
+                    .person-name{
+                        font-family: PingFangSC-Medium, SourceHanSansCN-Medium;
+                        font-size: 16px;
+                        color: #FFFFFF;
+                        letter-spacing: 0;
+                        text-align: justify;
+                        line-height: 26px;
+                    }
+                }
+            }
+            .header-right{
+                flex-basis: 74px;
+                .concernButton{
+                    background: #FFFFFF;
+                    box-shadow: 0 2px 10px 0 rgba(17,191,244,0.30);
+                    color: #11BFF4;
+                }
+            }
+        }
+
+    }
+    .myHomepageContent{
+        .square-detail{
+            display: flex;
+            justify-content: space-around;
+            // align-items: center;
+            text-align: center;
+            padding: 15px;
+            background: @white;
+            border-radius: 10px 10px 0 0;
+            margin-top: -8px;
+            .squre-item{
+                flex: 1;
+                position: relative;
+                margin-bottom: 10px;
+                .bd-right{
+                    width: 1px;
+                    height: 20px;
+                    line-height: 40px;
+                    color: #e1e1e1;
+                }
+                .num{
+                    font-family: PingFangSC-Semibold, SourceHanSansCN-Bold;
+                    font-size: 18px;
+                    color: #333333;
+                    letter-spacing: 0;
+                    text-align: center;
+                    line-height: 18px;
+                }
+                .numName{
+                    font-family: PingFangSC-Regular, SourceHanSansCN-Regular;
+                    font-size: 12px;
+                    color: #898989;
+                    letter-spacing: 0;
+                    text-align: justify;
+                    line-height: 12px;
+                    margin-top: 6px;
+                    text-align: center;
+                }
+                .bd-right{
+                    width: 1px;
+                    height: 20px;
+                    line-height: 40px;
+                    color: #e1e1e1;
+                    position: absolute;
+                    right: 0;
+                    top: 8px;
+                }
+            }
+        }
+        .nav-tab {
+            padding: 15px;
+            width: 100%;
+            white-space: nowrap;
+            font-size: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: @white;
+            margin-top: 10px;
+            .list_item {
+                flex: 1;
+                position: relative;
+                display: inline-block;
+                font-size: 14px;
+                color: @skyBlue;
+                text-align: center;
+                padding: 5px 0;
+                border: 1px solid @skyBlue;
+                &:nth-of-type(2){
+                    border-left: none;
+                    border-right: none;
+                }
+                &:nth-of-type(1){
+                    border-radius: 16px 0 0 16px;
+                }
+                &:nth-last-of-type(1){
+                    border-radius: 0 16px 16px 0;
+                }
+                &:nth-last-of-type(1){
+                    border-left: none;
+                }
+            }
+            .actived {
+                background: @skyBlue;
+                color: @white;
+            }
+        }
+        .myHome-box{
+            .my-scroller{
+                overflow: hidden;
+                position:absolute;
+                top: 264px;
+                bottom:0;
+                left:0;
+                right:0;
+            }
+        }
+    }
+
+}

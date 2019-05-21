@@ -1,0 +1,166 @@
+@import '../variable';
+
+.myAnswers_page{
+    font-family: PingFangSC-Regular,  SourceHanSansCN-Regular;
+    font-size: 14px;
+    color: #333333;
+    // line-height: 0.2rem;
+    width: 100%;
+    background: @col-f5;
+    .right{
+        font-family: PingFangSC-Light,  SourceHanSansCN-light;
+        font-size: 14px;
+        color: @skyBlue;
+        // text-align: center;
+        text-align: right;
+        .icontiwen{
+            font-size: 14px;
+            margin-left: 2%;
+        }
+    }
+    .myAnswersContent{
+        margin-top: 45px;
+        .detail-box{
+            margin-top: 10px;
+            .rankingBox{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                text-align: center;
+                padding: 15px;
+                background: @white;
+                .padtop{
+                    padding-top: 6px;
+                }
+                .ranking{
+                    position: relative;
+                    .photo{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        background: #ccc;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 50%;
+                            display: inline-block;
+                        }
+                    }
+                    .myRankPhoto{
+                        width: 49px;
+                        height: 15px;
+                        position: absolute;
+                        bottom: 0;
+                        left: -5px;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            vertical-align: middle;
+                        }
+                    }
+                    .myRank{
+                        position: absolute;
+                        width: 40px;
+                        bottom: -7px;
+                        left: 0;
+                        font-family: PingFangSC-Regular, SourceHanSansCN-Regular;
+                        font-size: 9px;
+                        color: #FFFFFF;
+                        letter-spacing: 0;
+                        text-align: center;
+                    }
+                    .num{
+                        font-family: PingFangSC-Semibold, SourceHanSansCN-Bold;
+                        font-size: 18px;
+                        color: #333333;
+                        letter-spacing: 0;
+                        text-align: center;
+                        line-height: 18px;
+                    }
+                    .special{
+                        color: #11BFF4;
+                    }
+                    .numName{
+                        font-family: PingFangSC-Regular, SourceHanSansCN-Regular;
+                        font-size: 12px;
+                        color: #898989;
+                        letter-spacing: 0;
+                        text-align: justify;
+                        line-height: 12px;
+                        margin-top: 6px;
+                        text-align: center;
+                    }
+
+                }
+            }
+            .communicationBox{
+                width: 100%;
+                margin-top: 10px;
+                .my-scroller {
+                    overflow: hidden;
+                    position:absolute;
+                    top: 180px;
+                    bottom:0;
+                    left:0;
+                    right:0;
+                }
+                .block{
+                    padding: 0 15px 15px;
+                    background: @white;
+                    margin-bottom: 10px;
+                    width: 100%;
+                    .block-title{
+                        // font-size: 12px;
+                        font-size: 14px;
+                        color: #999999;
+                        margin-bottom: 10px;
+                        padding-top: 10px;
+                    }
+                    .block-item{
+                        width: 100%;
+                        padding: 15px;
+                        background: @col-f5;
+                        position: relative;
+                        .title{
+                            font-family: PingFangSC-Medium, SourceHanSansCN-Medium;
+                            font-size: 16px;
+                        }
+                        .time{
+                            font-family: PingFangSC-Regular, SourceHanSansCN-Regular;
+                            font-size: 12px;
+                            color: #999999;
+                            margin-top: 6px;
+                            margin-left: 0;
+                            span{
+                                &:nth-of-type(2){
+                                    margin-left: 10px;
+                                    margin-right: 10px;
+                                }
+                            }
+                        }
+                        .discount{
+                            margin-top: 10px;
+                            overflow: hidden;
+                            display: -webkit-box;
+                            width: 100%;
+                            text-overflow: ellipsis;
+                            -webkit-line-clamp: 1;
+                            -webkit-box-orient: vertical;
+                            word-break: break-all;
+                        }
+                        b{
+                            top: -13px;
+                            left: 50px;
+                            position: absolute;
+                            width:0;
+                            height:0;
+                            border-width:0 10px 13px;
+                            border-style:solid;
+                            border-color:transparent transparent #f5f5f5;/*透明 透明  灰*/
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

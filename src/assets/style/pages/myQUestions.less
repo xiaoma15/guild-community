@@ -1,0 +1,54 @@
+@import '../variable';
+
+.myQUestions_page{
+    font-family: PingFangSC-Regular, SourceHanSansCN-Regular;
+    font-size: 0.14rem;
+    color: #333333;
+    width: 100%;
+    background: @col-f5;
+    .right{
+        font-family: PingFangSC-Light, SourceHanSansCN-light;
+        font-size: 0.14rem;
+        color: @skyBlue;
+        // text-align: center;
+        text-align: right;
+        .icontiwen{
+            font-size: 14px;
+            margin-left: 2%;
+        }
+    }
+    .myQUestionsContent{
+        margin-top: 45px;
+        .detail-box{
+            margin-top: 10px;
+            .communicationBox{
+                width: 100%;
+                margin-top: 10px;
+                .my-scroller {
+                    overflow: hidden;
+                    position:absolute;
+                    top: 94px;
+                    bottom:0;
+                    left:0;
+                    right:0;
+                }
+                .block{
+                    padding: 15px 15px 5px;
+                    background: @white;
+                    margin-bottom: 10px;
+                    width: 100%;
+                    .block-footer{
+                        padding: 10.5px 15px;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+    .time{
+        margin-left: 0;
+    }
+    .pad-0{
+        padding: 0!important;
+    }
+}

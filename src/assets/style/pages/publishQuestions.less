@@ -1,0 +1,155 @@
+@import '../variable';
+
+.publishQuestions_page{
+    .publishQuestionsContent{
+        margin-top: 45px;
+        margin-bottom: 56px;
+        padding: 0 15px;
+        font-family: PingFangSC-Regular, SourceHanSansCN-Regular;
+        font-size: 14px;
+        color: #333333;
+        .font_col {
+            color: @col-333 !important;
+            font-family: PingFangSC-Regular, SourceHanSansCN-Regular !important;
+            font-size: 14px;
+        }
+        .item-box{
+            padding: 15px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            span{
+                font-family: PingFangSC-Regular, SourceHanSansCN-Regular;
+                font-size: 12px;
+                color: #FF7EA9;
+                text-align: center;
+                line-height: 10px;
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 2px;
+            }
+            .item-sele{
+                color: @col-999;
+                font-family: PingFangSC-Light, SourceHanSansCN-Light;
+                i{
+                    color: @col-999;
+                    margin-left: 5px;
+                }
+            }
+        }
+        .wordCount{
+            position:relative;
+            width: 100%;
+            font-family: PingFangSC-Light, SourceHanSansCN-Light;
+            font-size: 14px;
+            &-area{
+                width: 100%;
+                height: 81px;
+                outline:none;
+                resize:none;
+                border: none;
+                color: @col-999;
+                line-height: 20px;
+                font-family: PingFangSC-Light, SourceHanSansCN-Light;
+                font-size: 14px;
+            }
+            &-note{
+                height: 61px;
+            }
+            .wordicon{
+                position: absolute;
+                width: 40px;
+                height:40px;
+                right: -23px;
+                bottom:-5px;
+                .icon-yuyinx{
+                    color: @skyBlue;
+                    font-size: 20px;
+                }
+                .icon-chax{
+                    color:@col-d8;
+                    font-size: 20px;
+                }
+            }
+            .wordwrap{
+                position:absolute;
+                right: 6px;
+                bottom: 15px;
+                color: @col-999;
+                text-align: center;
+                line-height: 20px;
+            }
+            .word{
+                color: @col-333;
+                text-align: center;
+            }
+        }
+        .invoicePhoto{
+            width: 100%;
+            padding-bottom: 16px;
+            display: flex;
+            &-item{
+                margin-left: 10px;
+                width: 60px;
+                height: 60px;
+                border: 1px solid @col-e1;
+                border-radius: 4px;
+                text-align: center;
+                line-height: 60px;
+                .icon_add {
+                    margin-right: 0;
+                    font-size: 26px;
+                    color: @col-e1;
+                }
+            }
+            .img_item_box {
+                position: relative;
+                margin-right: 10px;
+                width: 60px;
+                height: 60px;
+                border-radius: 4px;
+                .img_item {
+                    width: 100%;
+                    height: 100%;
+                }
+                .del_icon_box {
+                    position: absolute;
+                    right: -9px;
+                    top: -4px;
+                    width: 20px;
+                    height: 20px;
+                    .del_icon {
+                        position: relative;
+                        left: 3px;
+                        // font-size: 14px;
+                        // color: @col-pink;
+                        width: 14px;
+                        height: 14px;
+                        transform: rotate(-90deg);
+                    }
+                }
+            }
+            .no_mr {
+                margin-right: 0;
+            }
+        }
+    }
+    .publishQuestionsFooter{
+        position: fixed;
+        height: 50px;
+        padding-top: 5px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: #fff;
+    }
+    .tackPicture_style {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0,0,0,.7);
+        z-index: 20;
+    }
+}

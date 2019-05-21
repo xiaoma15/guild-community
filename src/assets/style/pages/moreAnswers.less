@@ -1,0 +1,138 @@
+@import '../variable';
+
+.moreAnswers_page{
+    .moreAnswersContent{
+        // margin-top: 45px;
+        margin-top: .45rem;
+        font-family: PingFangSC-Regular, SourceHanSansCN-Regular;
+        font-size: 14px;
+        color: #333333;
+        .moreAnswers{
+            // padding: 15px;
+            padding: .15rem;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            .left{
+                flex: 1;
+                display: flex;
+                .person-img{
+                    // flex-basis: 50px;
+                    // width: 50px;
+                    // height: 50px;
+                    flex-basis: .5rem;
+                    width: .5rem;
+                    height: .5rem;
+                    background: #ccc;
+                    border: 1px solid #fff;
+                    border-radius: 50%;
+                    display: inline-block;
+                }
+                .person-info{
+                    flex: 1;
+                    display: inline-block;
+                    vertical-align: top;
+                    // margin-left: 10px;
+                    margin-left: .1rem;
+                    .person-name{
+                        font-family: PingFangSC-Regular, SourceHanSansCN-Regular;
+                        font-size: 13px;
+                        color: #666666;
+                        // margin-bottom: 6px;
+                        margin-bottom: .06rem;
+                    }
+                }
+            }
+            .right{
+                // flex-basis: 82px;
+                flex-basis: 0.84rem;
+                text-align: right;
+            }
+            .bd-bottom{
+                // width: 270px;
+                width: 2.70rem;
+                height: 0.5px;
+                background: #E1E1E1;
+                position: absolute;
+                bottom: 0;
+                // right: 15px;
+                right: .15rem;
+            }
+            .colorName{
+                color: #FF8924;
+            }
+            .special{
+                font-family: PingFangSC-Regular, SourceHanSansCN-Regular;
+                font-size: 13px;
+                color: #2A2A2A;
+                // line-height: 18px;
+                line-height: .18rem;
+            }
+        }
+        .answers-box{
+            width: 100%;
+            // padding: 0 15px;
+            padding: 0 .15rem;
+            overflow-y: scroll;
+            // padding-bottom: 56px;
+            padding-bottom: .56rem;
+            .moreAnswers{
+                // padding-left: 15px;
+                // padding-right: 15px;
+                padding-left: .15rem;
+                padding-left: .15rem;
+                .left{
+                    // padding-left: 50px;
+                    .small-img{
+                        width: 20px;
+                        height: 20px;
+                        background: pink;
+                        border-radius: 50%;
+                        display: inline-block;
+                        vertical-align: top;
+                        margin-right: 6px;
+                    }
+                    // .person-answer{
+                    //     text-indent: 26px;
+                    // }
+                }
+            }
+        }
+    }
+    .answer-footer{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 56px;
+        z-index: 2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 15px;
+        input{
+            flex: 1;
+            height: 55px;
+            border: none;
+            outline: none;
+            font-family: PingFangSC-Light, SourceHanSansCN-light;
+            font-size: 14px;
+            color: #999999;
+        }
+        .closeButton{
+            flex-basis: 74px;
+        }
+    }
+    .comment{
+        width: 100%;
+        height: 100%;
+        outline:none;
+        resize:none;
+        border: none;
+        color: #999;
+        line-height: 20px;
+        font-family: PingFangSC-Lightight, SourceHanSansCN-light;
+        font-size: 14px;
+    }
+}
